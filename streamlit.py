@@ -21,7 +21,7 @@ def main():
             }
             st.write(file_details)
 
-            task_df = pd.read_excel('task.xlsx', sheet_name=None)
+            task_df = pd.read_excel(csv_file, sheet_name=None)
             sheet_names = list(task_df.keys())
             for adm in adms:
                 final_report = []
